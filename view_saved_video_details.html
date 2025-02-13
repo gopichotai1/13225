@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+<title></title>
+    <meta charset="UTF-8">
+    <title>  </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<center>
+<table>
+	<h2>Saved Video Detail</h2>
+    <table border="1%">
+	
+					
+			<th>File Name</th>
+			<th>Saved By</td>
+			
+
+			
+
+
+        {% for user in users %}
+        <tr>
+            <th>{{ user[1] }}</th>
+	
+			
+            <td>{{ user[0] }}</td>
+	
+			
+            
+			
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+        </tr>
+        {% endfor %}
+
+	
+</table>
+<br><br><br>
+</center>
+</div>
+
+</body>
+</html>
